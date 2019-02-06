@@ -12,6 +12,7 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
+        /*
         $user = new User;
         $user->name = "Admin";
         $user->email = "admin@bikner.com";
@@ -25,5 +26,6 @@ class UsersTableSeeder extends Seeder
         $user->password = bcrypt('harley');
         $user->is_admin = false;
         $user->save();
+        */
     }
 }
