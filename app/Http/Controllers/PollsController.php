@@ -17,11 +17,12 @@ class PollsController extends Controller
     }
     public function show($id)
     {
-        $poll = Poll::find($id);
+        $poll = Poll::with('questions')->find($id);
         if(is_null($poll)){
             return response()->json(null, 404);
         }
-        $response = new PollResource($poll); 
+
+        $response = new PollResource($poll,200); 
         return response()->json($response, 200);
     }
     public function store(Request $request)

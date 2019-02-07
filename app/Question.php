@@ -11,4 +11,8 @@ class Question extends Model
         'question',
         'poll_id'
     ];
+    public function poll() 
+    {
+        return $this->belongsTo(Poll::class, 'poll_id');
+    }
 }
