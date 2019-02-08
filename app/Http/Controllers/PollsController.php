@@ -22,7 +22,7 @@ class PollsController extends Controller
             return response()->json(null, 404);
         }
 
-        $response = new PollResource($poll,200); 
+        $response = new PollResource($poll,200);
         return response()->json($response, 200);
     }
     public function store(Request $request)

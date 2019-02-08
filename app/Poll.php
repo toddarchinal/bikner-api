@@ -8,7 +8,7 @@ class Poll extends Model
 {
     protected $fillable = ['title'];
 
-    protected $hidden = ['questions'];
+    //protected $hidden = ['questions'];
 
     public function questions()
     {
